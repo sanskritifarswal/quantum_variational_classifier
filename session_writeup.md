@@ -78,7 +78,7 @@ When the visualization crashed with a feature dimension mismatch (classical mode
 
 **Visualization:** A publication-quality 6-panel figure showing decision boundaries, learning curve, and model comparison — generated automatically, saved as a PNG.
 
-**GitHub repo:** README with architecture diagrams, hyperparameter guide, theoretical background, references, pinned requirements, MIT license, and `.gitignore` — all produced in the same session.
+**GitHub repo:** README with architecture diagrams, hyperparameter guide, theoretical background, references, pinned requirements, MIT license, `.gitignore`, a pytest test suite, and a GitHub Actions CI workflow — all produced in the same session.
 
 ---
 
@@ -97,6 +97,8 @@ The quantum ML work also points at a real thesis: as quantum hardware matures, t
 [github.com/sanskritifarswal/quantum_variational_classifier](https://github.com/sanskritifarswal/quantum_variational_classifier)
 
 - `quantum_classifier.py` — full pipeline, ~400 lines
+- `tests/test_quantum_classifier.py` — 10 regression tests (dataset, circuit, training, baselines)
+- `.github/workflows/ci.yml` — GitHub Actions: lint + test on Python 3.9 and 3.10
 - `decision_boundaries.png` — visualization output
-- `README.md` — technical documentation
+- `README.md` — technical documentation with CI badge
 - `requirements.txt` — pinned dependencies with compatibility notes

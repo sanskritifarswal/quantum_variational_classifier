@@ -1,5 +1,7 @@
 # Quantum-Enhanced Predictive Analytics Engine
 
+[![CI](https://github.com/sanskritifarswal/quantum_variational_classifier/actions/workflows/ci.yml/badge.svg)](https://github.com/sanskritifarswal/quantum_variational_classifier/actions/workflows/ci.yml)
+
 A **Parameterized Quantum Circuit (PQC)** classifier built with PennyLane and PyTorch, benchmarked head-to-head against classical ML baselines. Built as a technical demo for applying quantum machine learning to complex enterprise classification tasks — fraud detection, medical risk scoring, anomaly detection.
 
 ![Decision Boundaries](decision_boundaries.png)
@@ -88,6 +90,15 @@ pip install "autoray==0.6.12"   # pin for PennyLane 0.38 compatibility
 ```bash
 python quantum_classifier.py
 ```
+
+### Run tests
+
+```bash
+pip install pytest
+pytest tests/ -v
+```
+
+The test suite covers dataset shape/label integrity, circuit output bounds, gradient flow, parameter count, predict_proba correctness, a loss-decreasing smoke test, and classical baseline sanity checks — all without running a full training job.
 
 Training takes ~5–8 minutes on CPU (the quantum simulator runs every gate numerically). The script outputs:
 
