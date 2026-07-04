@@ -74,7 +74,7 @@ Without CNOT gates, each qubit processes its feature independently — the circu
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/quantum-variational-classifier.git
+git clone https://github.com/sanskritifarswal/quantum_variational_classifier.git
 cd quantum-variational-classifier
 
 pip install pennylane torch scikit-learn numpy matplotlib
